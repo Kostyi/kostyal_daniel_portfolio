@@ -1,0 +1,223 @@
+body
+{
+	
+	display: grid;
+	grid-template-areas: 
+	"fej"
+	"nav"
+	"kontent"
+	"footer"
+	;
+	
+
+
+	font-size:18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+}
+	*, *::before, *::after
+	{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+
+
+	}
+img
+{
+
+	max-width: 100%;
+}
+header
+{
+	text-align: center;
+	background-color: purple;
+	grid-area: fej;
+	line-height: 4.5rem;
+	font-size: 4rem;
+	color:#397023 ;
+	font-family: 'Blippo', fantasy; 
+	letter-spacing: 2.5px
+
+
+}
+nav
+{
+	background-color: purple;
+	grid-area: nav;
+	line-height: 4.5rem;
+	font-size: 2rem;
+	
+}
+main
+{
+	background-color:#ffaec9;
+	grid-area: kontent;
+	font-size: 1.54rem;
+	font-family: 'Florence', cursive;
+
+	
+	min-height: 100vh;
+	min-width: 100vh;
+
+
+}
+footer
+{
+	background-color: purple;
+	grid-area: footer;
+	line-height: 2rem;
+	color: #22b14d;
+}
+/*--elso oldal--*/
+	#kezdolap
+	{
+		text-align: center;
+		display: grid;
+		grid-template-rows:minmax(1rem,1fr) max-content minmax (1rem,1fr);
+		grid-template-columns: minmax(1rem,1fr) minmax(300px, 700px) minmax (1rem,1fr);
+
+	}
+	.indexkep
+	{
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 90%;
+
+	}
+	h1
+	{
+		
+		color:#397023;
+		font-size: 5rem;
+		letter-spacing: 2px;
+		font-family: 'Blippo', fantasy;
+		text-decoration: none;
+		
+
+	}
+
+	.elsogombok a
+	{
+		display: inline-block;
+		
+		text-decoration: none;
+
+	}
+
+	.elsogombok h1:hover
+	{
+
+		text-shadow: 0 0 15px grey;
+
+	}
+	/*--navigációs cuccok--*/
+	.navgombok
+	{
+
+		text-align: center;
+		letter-spacing: 4px
+		font-weight:bolder;
+		font-size: 2rem;
+		background-color: #397023;
+		display: inline-block;
+		padding: 0.8rem 1.7rem;
+		transition: .5s;
+		margin: 1rem 1rem;
+		border-radius: 1rem;s
+
+
+
+	}
+	.navgombok:hover
+	{
+		background-color: #5a8f45;
+	}
+	.navgombok a
+	{
+
+		color:white;
+		text-decoration: none;
+
+
+	}
+	
+	/*--bemutatkozás--*/
+	.Bemutatkozás
+	{
+		text-align: left;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(4rem, 3fr));
+		box-sizing: border-box;
+		grid-gap: 1rem;
+		margin: 2rem 6%;
+		background-color: #397023;
+
+
+	}
+	/*--képek--*/
+	.képesszöveg
+	{
+		text-align: center;
+		font-family: 'Blippo', fantasy; 
+		font-size: 4rem;
+
+	}
+	main div.galéria
+	{
+
+		padding: 2%;
+	}
+	.kártya
+	{
+		display: inline-block;
+		height: 10rem;
+		max-width: max-content;
+		max-height: 200px;
+		background-color: green;
+		margin: 1rem;
+
+	}
+	.kártya:hover
+	{
+			
+			transform: scale(1.1);
+	}
+	img.képméret
+	{	
+
+		max-width:320px;
+
+	}
+	/*--dokumentáció--*/
+	.Dokumentáció
+	{
+		text-align: center;
+		display: grid;
+		grid-template-rows: repeat(auto-fit, minmax(4rem, 3fr));
+		box-sizing: border-box;
+		grid-gap: 1rem;
+		margin: 2rem 6%;
+		background-color:#2345ad;
+		font-family: 'Blippo', fantasy;
+		letter-spacing: 2px;
+		
+
+	}
+	.dokuképek
+	{
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 90%;
+  		max-width:1200px;
+  		margin-top: 2rem;
+  		margin-bottom: 2rem;
+
+	}
+	.dokumargó
+	{
+		margin-right: 2rem;
+		margin-left: 2rem;
+	}
